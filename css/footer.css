@@ -1,0 +1,96 @@
+
+/* footer */
+
+footer {
+    background: #025196;
+    color: var(--white);
+}
+
+footer .logo-icon img {
+    height: 35px;
+    margin-top: 18px;
+}
+
+footer .links {
+    margin: 0 10px;
+}
+
+footer .links a {
+    color: var(--white);
+    font-size: 14px;
+    margin: 10px 55px 0 15px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+footer .links a:hover {
+    opacity: 1;
+}
+
+footer .links .link-margin {
+    margin-left: -17px;
+}
+
+footer .form label {
+    font-size: 14px;
+    margin-right: -20px;
+    font-weight: 600;
+}
+
+footer .form input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #E2E6EE;
+    height: 40px;
+    width: 180px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    color: var(--white);
+    font-size: 14px;
+    padding: 5px;
+}
+
+footer .form input::placeholder {
+    font-size: 12px;
+    transition: .3s;
+    color: var(--white);
+}
+
+footer .form input:focus {
+    outline: none;
+    caret-color: var(--white);
+}
+
+footer .form input:focus::placeholder {
+    opacity: .5;
+}
+
+footer .form button {
+    color: var(--white);
+    font-size: 14px;
+    border: none;
+    margin-left: -12px;
+}
+
+footer .form .icon {
+    transition: .3s;
+}
+
+footer .form button:hover .icon {
+    margin-left: 5px;
+}
+
+footer .line {
+    color: #E2E6EE;
+}
+
+footer .copy-rigths {
+    font-size: 11px;
+}
+
+@media (max-width: 860px) {
+    
+footer .links a {
+    font-size: 12px;
+}
+}
