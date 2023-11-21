@@ -3,7 +3,6 @@ $(window).on("load", function () {
 });
 
 $(document).ready(function () {
-
     $(window).on('scroll', function () {
         var scroll = $(window).scrollTop();
         if (scroll >= 50) {
@@ -29,7 +28,4 @@ $(document).ready(function () {
     $("nav ul li a").click(function () {
         $(this).addClass(".nav-active")
     });
-
-
-
 });

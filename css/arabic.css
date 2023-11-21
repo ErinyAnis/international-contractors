@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap');
+body {
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+.home .slide-content, .container {
+    direction: rtl;
+}
+.home .row .details p {
+    font-size: 16px;
+}
+.home .row .details {
+    min-height: 252px;
+}
+@media (max-width: 787px) {
+    .home .row .details {
+        min-height: 220px;
+    }
+}
+[dir='rtl'] .slick-slide
+{
+    float: left;
+}
+.slick-slider .slick-track, .slick-slider .slick-list { 
+    direction: rtl; 
+}
+.our-company .row h3 {
+    margin-right: 7px;
+}
+.other-proj .head a span {
+    margin-right: 3px;
+    margin-left: 0;
+}
+footer .form button:hover .icon {
+    margin-right: 7px !important;
+}
+footer .form label {
+    margin-right: 0;
+}
+footer .links .link-margin {
+    margin-right: 70px;
+}
+footer .links a {
+    margin: 10px 40px 0 15px;
+}
