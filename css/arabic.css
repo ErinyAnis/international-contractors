@@ -2,26 +2,25 @@
 body {
     font-family: 'Noto Sans Arabic', sans-serif;
 }
-.home .slide-content, .container {
+nav , .home .slide-content, .container {
     direction: rtl;
 }
-.home .row .details p {
+.row .details p {
     font-size: 16px;
 }
-.home .row .details {
-    min-height: 252px;
+.row .details {
+    min-height: 252px !important;
 }
 @media (max-width: 787px) {
-    .home .row .details {
-        min-height: 220px;
+    .row .details {
+        min-height: 220px !important;
     }
 }
-[dir='rtl'] .slick-slide
-{
-    float: left;
+[dir='rtl'] .slick-slide {
+    float: left !important;
 }
 .slick-slider .slick-track, .slick-slider .slick-list { 
-    direction: rtl; 
+    direction: rtl !important; 
 }
 .our-company .row h3 {
     margin-right: 7px;
@@ -29,6 +28,35 @@ body {
 .other-proj .head a span {
     margin-right: 3px;
     margin-left: 0;
+}
+.all-projects .info:hover .more-info span {
+    margin-right: 10px;
+}
+@media (max-width: 860px) {
+    nav ul {
+        right: 100%;
+        left: -100%;
+    }
+    #check:checked ~ ul {
+        left: -25px;
+    }
+    nav ul li {
+        margin: 50px 40px;
+    }
+}
+.second-img-sec .box-container .box a:hover span {
+    margin-right: 7px;
+}
+.contact-us .container .contact-info .info img {
+    margin: -10px 0 0 10px;
+}
+.contact-us .container .contact-info {
+    padding: 10px 15px;
+}
+@media (max-width: 992px) {
+.contact-us .container .contact-info {
+    padding: 10px 15px;
+}
 }
 footer .form button:hover .icon {
     margin-right: 7px !important;

@@ -237,7 +237,7 @@ nav.stickyadd {
         transition: all .5s;
         z-index: -1;
         padding-top: 15px;
-        box-shadow: 4px 1px 8px black;
+        box-shadow: -1px 1px 12px #00000038;
     }
 
     nav ul li {

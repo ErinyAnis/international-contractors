@@ -1,4 +1,4 @@
-$("#formValidation").validate({
+$("#contactform").validate({
     rules: {
         first_name: {
         required: true,

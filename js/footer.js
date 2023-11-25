@@ -1,5 +1,4 @@
 // form
-
 var form = document.getElementById("footer-form");
     
 async function handleSubmit(event) {
