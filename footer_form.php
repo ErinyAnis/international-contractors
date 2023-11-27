@@ -7,11 +7,14 @@ if (isset($_REQUEST['email']))
   //send email
   //$to = "mostafa.mahmoud@intcot.com";
   $email = $_REQUEST['email'] ; 
-  $header = "From: ". $email . ">\r\n";
+  $headers = "From: ". $email . ">\r\n";
+  $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
   
-  mail("mostafa.mahmoud@intcot.com", $header, " ". $email);
-  
-  header("Location: contact_us.html");
+  mail("remoonrafaat@gmail.com", $email, $headers);
+  echo 'Thank you for the message. We will contact you shortly.';
+//  header = "refresh:1.5;https://www.innovationscope.com/demos/eriny/index.html";
+//  header("refresh:1.5;https://www.innovationscope.com/demos/eriny/index.html" );
+  echo "<script type='text/javascript'>window.location.href='https://www.innovationscope.com/demos/eriny/index.html'</script>";
   }
 else
 //if "email" is not filled out, display the form

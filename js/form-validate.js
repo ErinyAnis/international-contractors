@@ -40,10 +40,10 @@ $("#contactform").validate({
         required: "please enter your message"
       }
     },
-  
-  
-    submitHandler: function(form) {
-    
-    $(form).submit();
-    }
+//  
+//  
+//    submitHandler: function(form) {
+//    
+//    $(form).submit();
+//    }
   });
