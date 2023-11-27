@@ -16,11 +16,8 @@ nav , .home .slide-content, .container {
         min-height: 220px !important;
     }
 }
-[dir='rtl'] .slick-slide {
-    float: left !important;
-}
-.slick-slider .slick-track, .slick-slider .slick-list { 
-    direction: rtl !important; 
+.project-details .main-slider {
+    direction: ltr;
 }
 .our-company .row h3 {
     margin-right: 7px;

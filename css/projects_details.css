@@ -55,6 +55,10 @@ p {
     font-size: 16px;
 }
 
+.fw-bold {
+    font-weight: 600;
+}
+
 @media (max-width: 767px){
     p {
         font-size: 16px;
@@ -62,9 +66,7 @@ p {
     
 }
 
-
 /* navbar */
-
 nav {
     height: 65px;
     background-color: var(--white);
@@ -110,19 +112,9 @@ nav .active-nav {
     font-weight: 600;
 }
 
-nav .active-nav a:before {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: -11px;
-    height: 2.5px;
-    width: 107%;
-    background: #393939;
-}
-
-nav ul li a:hover {
-    font-weight: 600;
+nav .active-nav a, nav ul li:hover a {
     border-bottom: 3px solid #393939;
+    font-weight: 600;
 }
 
 label {
@@ -205,7 +197,7 @@ label #btn {
     }
 
     nav .active-nav.active-color a, nav ul li a.active-color:hover {
-       border: none;
+        border: none;
     }
 
     #check:checked ~ ul {
@@ -226,7 +218,6 @@ label #btn {
 }
 
 /* main-page */
-
 .project-details .colored-sec {
     background: #EDF2FC;
     height: 350px;;
@@ -257,7 +248,6 @@ label #btn {
 .project-details .image img {
     border-radius: 5px;
     width: 100%;
-    height: 350px;
 }
 
 .project-details .sec-container .paragraph {
@@ -376,7 +366,7 @@ label #btn {
 
 /* video */
 .video {
-    margin-top: 50px;
+    margin-top: 23px;
     margin-bottom: 10%;
 }
 
