@@ -51,7 +51,6 @@ h1, h2, h3, h4, h5 {
 }
 
 /* main-components */
-
 .more-info {
     border: none;
     background: none;
@@ -228,7 +227,7 @@ label #btn {
     }
 
     nav .active-nav.active-color a, nav ul li a.active-color:hover {
-       border: none;
+        border: none;
     }
 
     #check:checked ~ ul {
@@ -250,7 +249,7 @@ label #btn {
 /* our projects */
 .our-projects {
     background: #EDF2FC;
-    height: 340px;
+    padding-bottom: 20px;
 }
 
 .our-projects .heading {
@@ -271,8 +270,7 @@ label #btn {
 
 /* cards */
 .cards-container {
-    margin-top: -7%;
-    margin-bottom: 5%;
+    margin-top: -80px;
 }
 
 .cards-container .card {
@@ -315,12 +313,6 @@ label #btn {
 }
 
 @media (max-width: 767px) {
-
-    .our-projects {
-        height: 260px;
-        width: 101%;
-    }
-
     .our-projects .heading h2 {
         font-size: 24px;
     }
@@ -330,7 +322,7 @@ label #btn {
     }
 
     .cards-container {
-        margin-top: -20%;
+        margin-top: -100px;
     }
 
     .cards-container .info h3 {

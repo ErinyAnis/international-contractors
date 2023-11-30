@@ -184,7 +184,6 @@ label #btn {
         width: 80%;
     }
 
-
     nav ul li a {
         color: #343F52 !important;
     }
@@ -345,6 +344,7 @@ label #btn {
 
 .paragraph {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .paragraph h3 {
@@ -370,26 +370,23 @@ label #btn {
 .second-img-sec {
     background-image: url(../images/about-us2.png);
     background-repeat: no-repeat;
-    height: 58%;
-    margin-top: 60px;
     background-position: center;
+    padding-top: 40px;
+    padding-bottom: 130px;
 }
 
 @media (max-width: 767px) {
     .second-img-sec {
         background-image: url(../images/about-us-2mobile.png);
-        background-size: 100%;
-        height: 60%;
+        background-size: cover;
     }
 }
 
 .second-img-sec .box-container {
-    width: 480px;
     background: var(--white);
     padding: 40px 35px;
     border-radius: 5px;
-    top: 14%;
-    left: 15%;
+    margin-top: 60px;
 }
 
 .second-img-sec .box-container .box h3 {
@@ -413,13 +410,6 @@ label #btn {
 }
 
 @media (max-width: 767px) {
-    .second-img-sec .box-container {
-        width: 366px;
-        top: -18%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-    }
-
     .second-img-sec .box-container .box h3 {
         font-size: 16px;
     }
@@ -525,7 +515,7 @@ label #btn {
     position: relative;
     box-shadow: 0px 4px 13px rgba(163, 163, 163, 0.25);
     border-radius: 5px;
-    min-height: 265px;
+    height: 265px;
 }
 
 .slider-sec .slider .details img {
@@ -567,16 +557,13 @@ label #btn {
 
 @media (max-width: 787px){
 .slider-sec .slider .details {
-    min-height: 233px;
+    height: 245px;
     padding: 20px;
-}
-
+    }
 .slider-sec .slider .details img {
     height: 25px;
+    }
 }
-
-}
-
 .cards-heading-p {
     padding: 0 10%;
 }
