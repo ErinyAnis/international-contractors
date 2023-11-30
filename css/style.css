@@ -50,7 +50,11 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: #343F52;
 }
 
@@ -69,7 +73,7 @@ p {
 }
 
 .heading p {
-    color:  #60697B;
+    color: #60697B;
     font-size: 14px;
     padding: 0 34%;
 }
@@ -82,9 +86,9 @@ p {
 }
 
 .more-info span {
-        margin: 0 8px;
-        font-size: 14px;
-        transition: .3s;
+    margin: 0 8px;
+    font-size: 14px;
+    transition: .3s;
 }
 
 .more-info:hover {
@@ -167,16 +171,19 @@ nav ul li a {
     transition: .1s;
 }
 
-nav .active-nav , nav ul li a:hover {
+nav .active-nav,
+nav ul li a:hover {
     font-weight: 600;
 }
 
-nav .active-nav a, nav ul li a:hover {
+nav .active-nav a,
+nav ul li a:hover {
     border-bottom: 2px solid #FFFFFF;
 }
 
 
-nav .active-nav.active-color a, nav ul li a.active-color:hover {
+nav .active-nav.active-color a,
+nav ul li a.active-color:hover {
     border-bottom: 3px solid #393939;
 }
 
@@ -249,7 +256,6 @@ nav.stickyadd {
         width: 80%;
     }
 
-
     nav ul li a {
         color: #343F52 !important;
     }
@@ -263,19 +269,20 @@ nav.stickyadd {
         border: none;
     }
 
-    nav .active-nav.active-color a, nav ul li a.active-color:hover {
-       border: none;
+    nav .active-nav.active-color a,
+    nav ul li a.active-color:hover {
+        border: none;
     }
 
-    #check:checked ~ ul {
+    #check:checked~ul {
         left: 25px;
     }
 
-    #check:checked ~ label #btn {
+    #check:checked~label #btn {
         display: none;
     }
 
-    #check:checked ~ label #cancel {
+    #check:checked~label #cancel {
         display: block;
     }
 
@@ -392,7 +399,8 @@ nav.stickyadd {
     outline: none !important;
 }
 
-.owl-prev, .owl-next {
+.owl-prev,
+.owl-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -413,7 +421,7 @@ nav.stickyadd {
     .owl-nav button {
         display: none !important;
     }
-    
+
     .owl-dots {
         bottom: 18%;
     }
@@ -512,24 +520,24 @@ nav.stickyadd {
 }
 
 @media (max-width: 860px) {
-.home .row {
-    margin-top: -63px;
-}
-}
-
-@media (max-width: 787px){
-.home .row .details {
-    height: 245px;
-    padding: 20px;
+    .home .row {
+        margin-top: -63px;
+    }
 }
 
-.home .row .details img {
-    height: 25px;
-}
+@media (max-width: 787px) {
+    .home .row .details {
+        height: 245px;
+        padding: 20px;
+    }
 
-.slider-sec .slider .details h3 {
-    font-size: 16px;
-}
+    .home .row .details img {
+        height: 25px;
+    }
+
+    .slider-sec .slider .details h3 {
+        font-size: 16px;
+    }
 
 }
 
@@ -562,7 +570,7 @@ nav.stickyadd {
 }
 
 .our-company .row .col-md-4 {
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
     margin-top: 30px;
 }
 
@@ -642,14 +650,15 @@ nav.stickyadd {
 
 @media (max-width: 767px) {
     .projects {
-        background-color: #EDF2FC;;
+        background-color: #EDF2FC;
+        ;
     }
 }
 
 .our-projects .info .title {
     font-size: 24px;
     font-weight: 600;
-} 
+}
 
 .our-projects .info .not-showing {
     margin: 0 0 5px 7px;
@@ -674,9 +683,9 @@ nav.stickyadd {
 }
 
 .our-projects .image img {
-        border-radius: 5px;
-        object-fit: cover;
-        width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .our-projects hr {
@@ -748,7 +757,9 @@ nav.stickyadd {
     margin-bottom: 10%;
 }
 
-.other-proj .cards .info:hover h3, .other-proj .cards .info:hover p, .other-proj .cards .info:hover button {
+.other-proj .cards .info:hover h3,
+.other-proj .cards .info:hover p,
+.other-proj .cards .info:hover button {
     color: #025196;
 }
 
@@ -778,21 +789,21 @@ nav.stickyadd {
 }
 
 .hover img:hover {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* select-language */
 .dropbtn {
     background-color: var(--white);
     color: #025196;
-    padding: 10px 14px;
-    font-size: 16px;
+    padding: 10px 17px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     transition: 0.3s;
 }
+
 .dropbtn i {
     font-size: 14px;
 }
@@ -850,5 +861,3 @@ nav.stickyadd {
         font-size: 12px;
     }
 }
-
-
