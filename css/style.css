@@ -805,7 +805,6 @@ nav.stickyadd {
     z-index: 3;
     position: relative;
     font-size: 14px;
-    min-width: 80px;
 }
 
 .dropbtn i {
