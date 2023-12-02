@@ -17,9 +17,7 @@ $(document).ready(function () {
                     dots: false,
                     arrows: false,
                 }
-            },
-            
-            
+            },  
             {
                 breakpoint: 767,
                 settings: {
