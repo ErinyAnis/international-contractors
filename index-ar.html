@@ -87,26 +87,28 @@
     </section>
 
     <section class="existing-news mt-5 section-padding">
-    <div class="container">
-        <div class="content-holder">
-            <div class="row align-items-center justify-content-center gap-4 gap-lg-0">
-                <div class="col-lg-8 col-xl-9">
-                    <h3 class="mb-2 mb-lg-3">أخبار رائعة!</h3>
-                    <h2>نحن متحمسون للإعلان عن شراكتنا الجديدة مع شركة توباز في العراق!🌟</h2>
-                    <p>لجميع التفاصيل اضغط هنا وتابع الاخبار!</p>
-                    <div class="mt-4 d-none d-lg-block"><a href="#" class="main-button our-pro-btn">اعرف المزيد</a>
+        <div class="container">
+            <div class="content-holder">
+                <div class="row align-items-center justify-content-center gap-4 gap-lg-0">
+                    <div class="col-lg-8 col-xl-9">
+                        <h3 class="mb-2 mb-lg-3">أخبار رائعة!</h3>
+                        <h2>نحن متحمسون للإعلان عن شراكتنا الجديدة مع شركة توباز في العراق!🌟</h2>
+                        <p>لجميع التفاصيل اضغط هنا وتابع الاخبار!</p>
+                        <div class="mt-4 d-none d-lg-block"><a id="newsDownloadBtn" href="/images/topaz-existing-news/بروفايل توباز.pdf"
+                                download="Topaz-profile.pdf" class="main-button our-pro-btn">اعرف المزيد</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-xl-3 text-center">
-                    <div>
-                        <img src="images/topaz.png" alt="Topaz">
+                    <div class="col-lg-4 col-xl-3 text-center">
+                        <div>
+                            <img src="images/topaz.png" alt="Topaz">
+                        </div>
                     </div>
+                    <div class="d-lg-none"><a id="newsDownloadBtn" href="/images/topaz-existing-news/بروفايل توباز.pdf"
+                            download="Topaz-profile.pdf" class="main-button our-pro-btn">اعرف
+                            المزيد</a></div>
                 </div>
-                <div class="d-lg-none"><a href="#" class="main-button our-pro-btn">اعرف
-                        المزيد</a></div>
             </div>
         </div>
-    </div>
     </section>
     <section class="our-company mt-5 section-padding">
         <div class="container">
@@ -244,6 +246,27 @@
     <script src="js/slick-carousel-ar.js"></script>
     <script src="js/select.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        $("#newsDownloadBtn").on("click", function (e) {
+            e.preventDefault();
+
+            // Initiate the download
+            let fileURL = $(this).attr("href");
+            let fileName = $(this).attr("download");
+
+            // Trigger the file download
+            var a = document.createElement('a');
+            a.href = fileURL;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+            // Open the file in a new tab
+            window.open(fileURL, '_blank');
+        });
+    </script>
 </body>
 
 </html>
